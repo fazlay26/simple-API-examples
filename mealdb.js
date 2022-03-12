@@ -1,3 +1,13 @@
+//keyboard er enter e click korle kaaj korbe
+const serachBtn = document.getElementById("button-search");
+const inputField = document.getElementById("search-field");
+
+inputField.addEventListener("keypress", function (event) {
+    //event.preventDefault();
+    if (event.keyCode == 13)
+        serachBtn.click();
+});
+
 const toggoleSpinner = displayStyle => {
     document.getElementById('spinner').style.display = displayStyle;
 }
