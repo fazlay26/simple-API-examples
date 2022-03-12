@@ -4,8 +4,10 @@ const inputField = document.getElementById("search-field");
 
 inputField.addEventListener("keypress", function (event) {
     //event.preventDefault();
-    if (event.keyCode == 13)
+    if (event.key == 'Enter') {
         serachBtn.click();
+    }
+
 });
 
 const toggoleSpinner = displayStyle => {
